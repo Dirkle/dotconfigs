@@ -1,0 +1,22 @@
+[user]
+   name = Dirk Cummings
+   email = dirkcummings@gmail.com
+[github]
+   user = Dirkle
+   token = d64e5921ee0d43ac6c0610d231556dc1
+[core]
+   editor = vim
+   pager = less
+   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[alias]
+   co = checkout
+   st = status -sb
+   ci = commit
+[color]
+   ui = auto
+[color "diff"]
+   whiespace = red reverse
+[pager]
+   color = true
+[divv "zip"]
+   textconv = unzip -c -a
