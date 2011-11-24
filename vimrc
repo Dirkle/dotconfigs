@@ -99,4 +99,4 @@ au BufRead,BufNewFile *.py set foldmethod=indent
 
 
 " Makefiles
-au BufRead,BufNewFile [Mm]akefile* set noet ts=8 sw=8 nocindent list lsc=tab:>-,trail:x
+au BufRead,BufNewFile [Mm]akefile* set noet ts=8 sw=8 nocindent list lcs=tab:>-,trail:x
