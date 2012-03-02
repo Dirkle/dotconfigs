@@ -34,6 +34,9 @@ set autoindent          " automatically set the indent of a new line
 set nosmartindent       " no clever autoindenting (local to buffer); let
                         "    cindent do it
 
+" enable backspace
+set backspace=2
+
 " Make breaks more obvious
 set showbreak=+++\ \
 set numberwidth=4
