@@ -34,6 +34,9 @@ set autoindent          " automatically set the indent of a new line
 set nosmartindent       " no clever autoindenting (local to buffer); let
                         "    cindent do it
 
+" enable backspace
+set backspace=2
+
 " Make breaks more obvious
 set showbreak=+++\ \
 set numberwidth=4
@@ -67,8 +70,8 @@ set showmatch        " show matching () {} etc.
 
 set scrolloff=5
 
-" Remove trailing spaces form lines w/ F6: http://vim.wikia.com/wiki/Remove_unwanted_spaces
-:nnoremap <silent> <F6> :let _s=@<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+" Remove trailing spaces form lines w/ F2: http://vim.wikia.com/wiki/Remove_unwanted_spaces
+:nnoremap <silent> <F2> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Toggle spell checking
 :map <F7> :set spell!<cr>
@@ -99,4 +102,4 @@ au BufRead,BufNewFile *.py set foldmethod=indent
 
 
 " Makefiles
-au BufRead,BufNewFile [Mm]akefile* set noet ts=8 sw=8 nocindent list lsc=tab:>-,trail:x
+au BufRead,BufNewFile [Mm]akefile* set noet ts=8 sw=8 nocindent list lcs=tab:>-,trail:x
